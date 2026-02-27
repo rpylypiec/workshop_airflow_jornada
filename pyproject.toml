@@ -6,8 +6,9 @@ authors = [
     {name = "Raphael Pylypiec",email = "rpylypiec@outlook.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = "^3.10"
 dependencies = [
+    "loguru (>=0.7.3,<0.8.0)"
 ]
 
 
