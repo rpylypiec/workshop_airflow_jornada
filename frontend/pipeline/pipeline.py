@@ -1,8 +1,12 @@
 from time import sleep
-
 from loguru import logger
 
-logger.add("execution_logs.log", format="{time} - {message}", level="INFO", rotation="1 Day" )
+logger.add(
+    "execution_logs.log",
+    format="{time} - {message}",
+    level="INFO",
+    rotation="1 Day"
+)
 
 def primeira_atividade():
     logger.info("Minha primeira atividade!")
@@ -16,7 +20,6 @@ def terceira_atividade():
     logger.info("Minha terceira atividade!")
     sleep(2)
 
-
 def pipeline():
     primeira_atividade()
     segunda_atividade()
@@ -24,6 +27,4 @@ def pipeline():
     logger.info("Pipeline finalizou!")
 
 if __name__ == "__main__":
-    while True:
-        pipeline()
-        sleep(10)
+    pipeline()
